@@ -15,7 +15,11 @@ const resourceSchema = mongoose.Schema({
         type:String,
         required: true,
        
-    },    
+    }, 
+    Province:{
+        type:String,
+        required:false,
+    }  , 
     Name:{
         type: String,
         required: true

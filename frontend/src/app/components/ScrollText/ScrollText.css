@@ -1,0 +1,31 @@
+
+.scroll-text-row {
+    margin-top: -3%;
+    margin-bottom: 3%;    
+    padding: 1.5em 0em;
+    width: 240%;
+    background-color: lightgray;
+    display: flex;
+    flex-wrap: nowrap;
+    animation: move 12s infinite linear;
+    justify-content: space-between;
+  }
+  @keyframes move {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .scroll-text {
+    margin: 0;
+    padding-left: 0px;    
+    width: 100%;
+  }
+  
+  .scroll-text-div {
+    margin: 0;
+    padding-left: 0px;
+    font-weight: 600;
+    /* width: 2%; */
+  }
+  
