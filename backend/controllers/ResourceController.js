@@ -16,14 +16,7 @@ const viewResources = asyncHandler(async(req, res) =>{
     res.status(200).json(resources)
 })
 
-const overviewResources = asyncHandler(async(req, res) =>{
-    // const camps = await EmergencyCamp.find()
-    const vehicles = await Resource.find();
-    let  countVh =0;
-    const  Totalvehicles = vehicles.map((vh) => countVh+1 );
-   const stats = {'total_vehicles': Totalvehicles};
-    res.status(200).json(stats)
-})
+
 
 // @desc      Edit Emergency Cam 
 // @route     POST /api/emergency-camps/edit/:id
@@ -153,6 +146,5 @@ module.exports = {
     addResources,
     editResources,
     deleteResource,
-    overviewResources,
   
 }
